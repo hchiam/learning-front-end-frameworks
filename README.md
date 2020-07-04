@@ -2,6 +2,8 @@
 
 Just one of the things I'm learning. https://github.com/hchiam/learning
 
+https://www.udacity.com/course/front-end-frameworks--ud894
+
 ## Asides
 
 - this course focuses on: complete application frameworks -> afterwards: can pick up React, which only really handles the view
