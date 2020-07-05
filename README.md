@@ -8,6 +8,7 @@ https://www.udacity.com/course/front-end-frameworks--ud894
 
 - this course focuses on: complete application frameworks -> afterwards: can pick up React, which only really handles the view
 - this course builds on courses like these: https://github.com/hchiam/learning-web-tooling-and-automation and https://github.com/hchiam/learning-js-design-patterns
+- https://github.com/udacity/FEF-UdaciMeals-Backbone and https://github.com/udacity/FEF-UdaciMeals-Backbone-Server and `cd binaries; ./server_darwin_amd64 --www=../../FEF-UdaciMeals-Backbone` and http://localhost:8000/
 
 ## Notes
 
