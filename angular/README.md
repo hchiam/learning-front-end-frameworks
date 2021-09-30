@@ -16,6 +16,11 @@ bower install
 grunt serve
 ```
 
+Just:
+
+- include the script for AngularJS
+- add the `ng-app` attribute to the `<body>` tag
+
 ## yeoman for consistency and organization
 
 <https://github.com/yeoman/generator-angular#angularjs-generator-->
