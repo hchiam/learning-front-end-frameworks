@@ -23,4 +23,5 @@ mkdir yeoman
 cd yeoman
 npm install -g grunt-cli bower yo generator-karma generator-angular
 yo angular udaciMeals
+grunt serve
 ```
