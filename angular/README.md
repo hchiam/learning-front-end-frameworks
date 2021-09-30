@@ -18,6 +18,8 @@ grunt serve
 
 ## yeoman for consistency and organization
 
+<https://github.com/yeoman/generator-angular#angularjs-generator-->
+
 ```bash
 mkdir yeoman
 cd yeoman
