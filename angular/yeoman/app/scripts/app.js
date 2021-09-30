@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * @ngdoc overview
@@ -8,5 +8,4 @@
  *
  * Main module of the application.
  */
-angular
-  .module('udaciMealsApp', []);
+angular.module("udaciMealsApp", []); // [] for dependencies' names
