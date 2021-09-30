@@ -4,7 +4,22 @@
 
 ---
 
-## first demo
+## yeoman for consistency and organization
+
+<https://github.com/yeoman/generator-angular#angularjs-generator-->
+
+```bash
+mkdir yeoman
+cd yeoman
+npm install -g grunt-cli bower yo generator-karma generator-angular
+yo angular udaciMeals
+grunt serve
+```
+
+## quizzes
+
+<details>
+<summary>quiz 1</summary>
 
 <https://github.com/udacity/FEF-Quiz-Angular-Up-and-Running>
 
@@ -21,14 +36,29 @@ Just:
 - include the script for AngularJS
 - add the `ng-app` attribute to the `<body>` tag
 
-## yeoman for consistency and organization
+</details>
 
-<https://github.com/yeoman/generator-angular#angularjs-generator-->
+<details>
+<summary>quiz 2</summary>
+
+<https://github.com/udacity/FEF-Quiz-Angular-Module>
 
 ```bash
-mkdir yeoman
-cd yeoman
-npm install -g grunt-cli bower yo generator-karma generator-angular
-yo angular udaciMeals
-grunt serve
+gh repo clone udacity/FEF-Quiz-Angular-Module
+cd FEF-Quiz-Angular-Module
+npm install; bower install; grunt serve
 ```
+
+```js
+// CREATE:
+angular.module("legoBricks", []);
+
+// and in another J file: (GET)
+angular.module("newModuleQuizApp", ["legoBricks"]);
+```
+
+```html
+<script src="scripts/legoBricks.js"></script>
+```
+
+</details>
