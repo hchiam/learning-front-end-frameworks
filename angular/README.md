@@ -21,6 +21,7 @@ Generate files:
 ```bash
 yo angular:controller menu
 yo angular:view menu
+yo angular:service foodFinder
 ```
 
 ## quizzes
@@ -129,3 +130,39 @@ gh repo clone udacity/FEF-Quiz-Angular-Directives; cd FEF-Quiz-Angular-Directive
 ```
 
 </details>
+
+Dependency injection:
+
+- what: don't hard code dependencies in the code, but give it its dependencies when that code is called
+
+- why: decouple. simplify that code. make it easier to update that code's dependencies.
+
+- how: an "injector" knows where are the info and services are. then some code can tell the injector what it needs, and the injector fetches what that calling code needs.
+
+Services:
+
+- services seem similar to controllers, but controllers are specific to one view, while services are not specific to one view and are usually intended to "serve"" multiple views
+
+- example: a user service to fetch user data can be used by a menu controller/view and an item controller/view
+
+  ```js
+  angular.module("udaciMealsApp").service("foodFinder", function () {
+    this.getMenu = function () {
+      return $.get("/menu/menu.json");
+    };
+  });
+
+  // we can inject the service as a dependency in the controller code:
+
+  angular.module("udaciMealsApp").controller("MenuCtrl", [
+    "foodFinder", // dependency services injected here!
+    "service2",
+    "service3",
+    function (menu, s2, s3) {
+      var vm = this;
+      menu.getMenu().then(function (data) {
+        vm.items = data;
+      });
+    },
+  ]);
+  ```
