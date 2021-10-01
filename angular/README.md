@@ -38,12 +38,12 @@ bower install
 grunt serve
 ```
 
+</details>
+
 Just:
 
 - include the script for AngularJS
 - add the `ng-app` attribute to the `<body>` tag
-
-</details>
 
 <details>
 <summary>quiz 2</summary>
@@ -55,6 +55,8 @@ gh repo clone udacity/FEF-Quiz-Angular-Module
 cd FEF-Quiz-Angular-Module
 npm install; bower install; grunt serve
 ```
+
+</details>
 
 ```js
 // CREATE:
@@ -72,8 +74,6 @@ angular.module("newModuleQuizApp", ["legoBricks"]);
 <body ng-app="newModuleQuizApp"></body>
 ```
 
-</details>
-
 <details>
 <summary>quiz 3</summary>
 
@@ -82,3 +82,7 @@ gh repo clone udacity/FEF-Quiz-Angular-Bootstrap; cd FEF-Quiz-Angular-Bootstrap;
 ```
 
 </details>
+
+```html
+<div ng-include="'views/menu.html'" ng-controller="MenuCtrl as menu"></div>
+```
