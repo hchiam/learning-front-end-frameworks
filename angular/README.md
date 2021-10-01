@@ -107,3 +107,12 @@ angular.module("q1UpAndRunningApp").controller("MenuCtrl", function () {
   this.rating = 3;
 });
 ```
+
+<details>
+<summary>quiz 4</summary>
+
+```bash
+gh repo clone udacity/FEF-Quiz-Angular-Controllers; cd FEF-Quiz-Angular-Controllers; npm install; bower install; grunt serve
+```
+
+</details>
