@@ -37,12 +37,65 @@ bower install -S angular-ui-router
 
 ```js
 // inject the ui-router module into the app module:
+angular.module("udaciMealsApp", ["ui.router"]).config([
+  "$stateProvider",
+  "$urlRouterProvider",
+  function ($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise("/");
+    $stateProvider
+      .state("home", {
+        url: "/",
+        templateUrl: "views/menu.html",
+        controller: "MenuCtrl as menu",
+      })
+      .state("item", {
+        url: "/item/:id",
+        templateUrl: "views/item.html",
+        controller: "ItemCtrl as item",
+      });
+  },
+]);
+```
+
+```html
+<div ui-view></div>
+```
+
+and use the route `:id` in the template controller:
+
+```js
+angular.module("udaciMealsApp").controller("ItemCtrl", [
+  "$stateParams",
+  "foodFinder",
+  function ($stateParams, foodFinder) {
+    var vs = this;
+
+    // $stateParams.id = route /item/:id
+    foodFinder.getItem($stateParams.id).then(function (data) {
+      vs.data = data;
+    });
+  },
+]);
+
+//
+
 angular
-  .module("udaciMealsApp", ["ui.router"])
-  .config(function ($stateProvider) {
-    $stateProvider.state(stateName, stateConfig);
+  .module("udaciMealsApp")
+  .service("foodFinder", function ($stateParams, foodFinder) {
+    // ...
+
+    this.getItem = function (id) {
+      var menuItemFile = "/menu/" + id + ".json";
+      return $.get(menuItemFile);
+    };
   });
 ```
+
+```html
+<a ui-sref="item({id: item.id})"></a>
+```
+
+ui-router nested views: <https://github.com/angular-ui/ui-router/wiki/Nested-States-%26-Nested-Views> (lets you inherit data from the parent route's scope)
 
 ## quizzes
 
