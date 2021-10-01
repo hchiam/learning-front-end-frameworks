@@ -116,3 +116,16 @@ gh repo clone udacity/FEF-Quiz-Angular-Controllers; cd FEF-Quiz-Angular-Controll
 ```
 
 </details>
+
+Directives are things like `ng-app`, `ng-controller`, `ng-include` (for view/template), `ng-src`, `ng-show`, `ng-if`, `ng-repeat`, `ng-class`, `ng-click`, etc.
+
+Note that `ng-src` should be used instead of `src` for dynamic links, since the browser will try to immediately fetch the `src` while `ng-src` is under Angular's control and will be populated and fetched when ready.
+
+<details>
+<summary>quiz 5</summary>
+
+```bash
+gh repo clone udacity/FEF-Quiz-Angular-Directives; cd FEF-Quiz-Angular-Directives; npm i; bower install; grunt serve
+```
+
+</details>
