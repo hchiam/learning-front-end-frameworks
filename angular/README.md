@@ -16,6 +16,12 @@ yo angular udaciMeals
 grunt serve
 ```
 
+Generate files:
+
+```bash
+yo angular:controller menu
+```
+
 ## quizzes
 
 <details>
