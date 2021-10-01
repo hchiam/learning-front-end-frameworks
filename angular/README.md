@@ -86,3 +86,24 @@ gh repo clone udacity/FEF-Quiz-Angular-Bootstrap; cd FEF-Quiz-Angular-Bootstrap;
 ```html
 <div ng-include="'views/menu.html'" ng-controller="MenuCtrl as menu"></div>
 ```
+
+```html
+<div class="row">
+  <div class="items-container">
+    <div class="col-md-4">
+      <h4>{{menu.name}}</h4>
+      <p>Rating: {{menu.rating}}</p>
+      <p>Image: {{menu.img}}</p>
+    </div>
+  </div>
+</div>
+```
+
+```js
+angular.module("q1UpAndRunningApp").controller("MenuCtrl", function () {
+  this.id = "some-id";
+  this.name = "some name";
+  this.img = "some image";
+  this.rating = 3;
+});
+```
