@@ -61,4 +61,8 @@ angular.module("newModuleQuizApp", ["legoBricks"]);
 <script src="scripts/legoBricks.js"></script>
 ```
 
+```html
+<body ng-app="newModuleQuizApp"></body>
+```
+
 </details>
