@@ -66,3 +66,12 @@ angular.module("newModuleQuizApp", ["legoBricks"]);
 ```
 
 </details>
+
+<details>
+<summary>quiz 3</summary>
+
+```bash
+gh repo clone udacity/FEF-Quiz-Angular-Bootstrap; cd FEF-Quiz-Angular-Bootstrap; npm install; bower install; grunt serve
+```
+
+</details>
