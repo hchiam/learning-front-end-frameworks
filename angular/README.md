@@ -166,3 +166,12 @@ Services:
     },
   ]);
   ```
+
+<details>
+<summary>quiz 6</summary>
+
+```bash
+gh repo clone udacity/FEF-Quiz-Angular-Services; cd FEF-Quiz-Angular-Services; npm i; bower install; grunt serve
+```
+
+</details>
