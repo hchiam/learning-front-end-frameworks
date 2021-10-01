@@ -20,6 +20,7 @@ Generate files:
 
 ```bash
 yo angular:controller menu
+yo angular:view menu
 ```
 
 ## quizzes
