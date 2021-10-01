@@ -93,6 +93,11 @@ angular
 
 ```html
 <a ui-sref="item({id: item.id})"></a>
+
+<!-- and for nested routes: -->
+<a ui-sref="parent.child"></a>
+<!-- or to avoid specifying parent: -->
+<a ui-sref=".child"></a>
 ```
 
 ui-router nested views: <https://github.com/angular-ui/ui-router/wiki/Nested-States-%26-Nested-Views> (lets you inherit data from the parent route's scope)
