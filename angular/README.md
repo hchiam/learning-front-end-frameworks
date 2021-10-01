@@ -248,3 +248,12 @@ gh repo clone udacity/FEF-Quiz-Angular-Services; cd FEF-Quiz-Angular-Services; n
 ```
 
 </details>
+
+<details>
+<summary>quiz 7</summary>
+
+```bash
+gh repo clone udacity/FEF-Quiz-Angular-Routing; cd FEF-Quiz-Angular-Routing; npm i; bower install; grunt serve
+```
+
+</details>
