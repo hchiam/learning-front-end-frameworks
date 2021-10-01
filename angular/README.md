@@ -37,7 +37,11 @@ bower install -S angular-ui-router
 
 ```js
 // inject the ui-router module into the app module:
-angular.module("udaciMealsApp", ["ui.router"]);
+angular
+  .module("udaciMealsApp", ["ui.router"])
+  .config(function ($stateProvider) {
+    $stateProvider.state(stateName, stateConfig);
+  });
 ```
 
 ## quizzes
