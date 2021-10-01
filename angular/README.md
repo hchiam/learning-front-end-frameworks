@@ -24,6 +24,22 @@ yo angular:view menu
 yo angular:service foodFinder
 ```
 
+## AngularUI Router: `ui-router`
+
+<https://github.com/angular-ui/ui-router>
+
+```bash
+bower install -S angular-ui-router
+# -S to save to bower config file
+```
+
+[Config example](https://github.com/angular-ui/ui-router/wiki/Quick-Reference#configure-your-states-in-your-modules-config-method):
+
+```js
+// inject the ui-router module into the app module:
+angular.module("udaciMealsApp", ["ui.router"]);
+```
+
 ## quizzes
 
 <details>
